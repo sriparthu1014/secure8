@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@keyframes scrollLeft {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .scrolling-wrapper {
+      animation: scrollLeft 25s linear infinite;
+    }

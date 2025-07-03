@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-white">
+
+    <!-- ✅ Navbar -->
+    <nav class="fixed w-full top-0 z-50 bg-[#b2dfc3cf] shadow-md">
+      <div class="max-w-[1200px] mx-auto flex items-center justify-between px-4 py-4 md:px-12">
+        
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#">
+            <img src="https://secure8.io/wp-content/uploads/2025/06/Secure8-1-1.png" alt="Secure8 Logo" class="h-10 w-auto" />
+          </a>
+        </div>
+  
+        <!-- Hamburger (mobile only) -->
+        <div class="md:hidden">
+          <button id="menuToggle" class="text-3xl font-bold">&#9776;</button>
+        </div>
+  
+        <!-- Desktop Nav Links -->
+        <div id="navLinks" class="hidden md:flex items-center gap-6">
+          <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg transition-all">Home</a>
+          <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 pl-3 pr-3 rounded-lg transition-all">About</a>
+          <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 pl-3 pr-3 rounded-lg transition-all">Services</a>
+          <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 pl-3 pr-3 rounded-lg transition-all">Academy</a>
+          <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 pl-3 pr-3 rounded-lg transition-all">Contact</a>
+          <a href="#" class="bg-green-600 text-slate-950 font-bold uppercase px-4 py-2 rounded-lg border border-[#449048] hover:bg-green-500 transition-all">
+            Request Quote
+          </a>
+        </div>
+      </div>
+  
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-[#b2dfdb]">
+        <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">Home</a>
+        <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">About</a>
+        <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">Services</a>
+        <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">Academy</a>
+        <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">Contact</a>
+        <a href="#" class="block mt-2 bg-[#66bb6a] text-black font-bold uppercase px-4 py-2 rounded-lg border border-[#449048] hover:bg-green-500 transition-all">
+          Request Quote
+        </a>
+      </div>
+    </nav>
+  
+    <!-- ✅ Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center text-white pt-24 bg-cover bg-center" style="background-image: url('./h1.jpg');">
+      <div class="absolute inset-0 bg-black/70"></div> <!-- Overlay -->
+  
+      <div class="relative z-10 max-w-6xl mx-auto px-6 text-center md:text-left">
+        <p class="text-xl mb-4">Simplifying Security. Strengthening Identity.</p>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          Your Trusted Partner in <br />
+          <span class="text-white">Cybersecurity</span><br />
+          and Identity Management
+        </h1>
+  
+        <p class="text-lg max-w-3xl mx-auto md:mx-0 leading-relaxed mb-8">
+          <strong>Secure8</strong> delivers cutting-edge <strong>Cybersecurity</strong> and <strong>IAM solutions</strong> to safeguard your applications. 
+          From <strong>VAPT services</strong> to identity governance, we help businesses stay secure, compliant, and prepared for evolving cyber threats.
+        </p>
+  
+        <a href="#"
+           class="inline-block px-6 py-3 bg-green-400 hover:bg-green-500 text-black font-bold rounded-full shadow transition duration-300">
+           SAVE CHANGES
+        </a>
+      </div>
+    </section>
+  
+     <!-- Services Section -->
+<section class="bg-[#d9ffe3] py-20 px-4 md:px-8">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl md:text-6xl font-bold text-gray-900 mb-4">
+      How can we help you?
+    </h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-12 font-semibold">
+      At Secure8, we provide expert-driven services across VAPT, cloud, IAM, and user awareness — helping you stay secure, compliant, and resilient.
+    </p>
+
+    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
+        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-hashtag fa-lg"></i></div>
+        <h3 class="font-bold text-lg mb-2 text-gray-900">Information Security</h3>
+        <p class="text-gray-600">
+          We protect your digital assets through strategic infosec programs,
+          <strong class="text-blue-600 font-medium">risk assessments</strong>, and compliance-driven security controls.
+        </p>
+      </div>
+      
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
+        <div class="text-3xl text-green-700 mb-4">
+          <i class="fa-sharp fa-solid fa-magnifying-glass fa-lg"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2 text-gray-900">Penetration Testing</h3>
+        <p class="text-gray-600">
+          We simulate real-world cyberattacks to uncover 
+          <strong class="text-blue-600 font-medium">vulnerabilities</strong> so you can fix them before they’re exploited.
+        </p>
+      </div>
+      
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
+        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-code fa-lg"></i></div>
+        <h3 class="font-bold text-lg mb-2 text-gray-900">API Security Testing</h3>
+        <p class="text-gray-600">We test your APIs for hidden flaws like <strong class="text-blue-600 font-medium">IDOR</strong>, broken auth, and injection risks to protect your data.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
+        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-cloud fa-lg"></i></div>
+        <h3 class="font-bold text-lg mb-2 text-gray-900">Cloud Security</h3>
+        <p class="text-gray-600"><strong class="text-blue-600 font-medium">Protect your AWS, Azure, or GCP environments</strong>. We identify misconfigurations and access issues to keep you secure and compliant.</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
+        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-fingerprint fa-lg"></i></div>
+        <h3 class="font-bold text-lg mb-2 text-gray-900">Identity & Access Management (IAM)</h3>
+        <p class="text-gray-600">We help secure IAM systems so only the <strong class="text-blue-600 font-medium">right people</strong> access the right resources — reducing insider risk and boosting compliance.</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
+        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-book-open fa-lg"></i></div>
+        <h3 class="font-bold text-lg mb-2 text-gray-900">Security Awareness & Managed Services</h3>
+        <p class="text-gray-600">From training to 24/7 support, we help you <strong class="text-blue-600 font-medium">build a security-first culture</strong> and meet compliance standards like ISO 27001.</p>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="bg-white rounded-lg shadow p-[65px] text-left sm:col-span-2 lg:col-span-1 transform transition-transform duration-300 hover:scale-105">
+        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-mobile fa-lg"></i></div>
+        <h3 class="font-bold text-lg mb-2 text-gray-900">Mobile Application Security</h3>
+        <p class="text-gray-600"> <strong class="text-blue-600 font-medium">Protect your Android and iOS apps from cyber threats</strong> <br>We uncover vulnerabilities in Android & iOS apps — from data handling to broken auth — ensuring your mobile apps remain trusted and secure.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#a2fcba] py-16 px-4 text-center">
+  <!-- Heading -->
+  <h2 class="text-3xl md:text-5xl font-extrabold text-slate-800 mb-4">
+    Kickstarting a Cyber-Ready <br class="md:hidden" />
+    Generation
+  </h2>
+
+  <!-- Subheading -->
+  <p class="text-gray-600 text-lg font-semibold max-w-2xl mx-auto mb-[40px]">
+    Our mission is to train, upskill, and empower the next wave of cybersecurity professionals — starting now.
+  </p>
+
+  <!-- Image Section -->
+  <div class="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-[100px] mb-20">
+    <!-- Image 1 -->
+    <img 
+      src="https://media.istockphoto.com/id/1309899404/photo/middle-aged-hacker-making-cryptocurrency-fraud-using-virus-software-and-computer-interface.jpg?s=612x612&w=0&k=20&c=QQpmYADwCiklnGMQTdJIypvqSGN25EzAPC-AcAywsLA=" 
+      alt="Hacker image"
+      class="w-60 md:w-72 rounded-lg shadow transform transition-transform duration-300 hover:scale-105" />
+  
+    <!-- Image 2 -->
+    <img 
+      src="https://media.istockphoto.com/id/1386672473/photo/businessman-using-a-computer-to-document-management-concept-online-documentation-database-and.jpg?s=612x612&w=0&k=20&c=c3IDkl2DDJkUKrH1z7fPqw4XXoIn7CfaS14DK8xGqJQ=" 
+      alt="Cybersecurity image"
+      class="w-60 md:w-72 rounded-lg shadow transform transition-transform duration-300 hover:scale-105" />
+  </div>
+  
+
+  <!-- CTA Button -->
+  <a href="#"
+     class="inline-block bg-green-600 text-slate-950 font-bold uppercase px-4 py-2 mb rounded-lg border border-[#449048] hover:bg-green-500 transition-all">
+    Join the Academy
+  </a>
+</section>
+<!--Customers-->
+<section class="bg-[#d9ffe3] py-20 text-center">
+  <!-- Heading -->
+  <h2 class="text-3xl md:text-5xl font-extrabold text-gray-800">Our Customers</h2>
+  <p class="mt-5 text-lg text-gray-500 font-semibold">
+    Trusted by industry leaders worldwide
+  </p>
+
+  <!-- Logo Marquee -->
+  <div class="overflow-hidden w-full mt-12">
+    <div class="flex scrolling-wrapper whitespace-nowrap items-center gap-20 px-10">
+      <!-- Logos (duplicated for seamless scroll) -->
+      <img src="https://secure8.io/wp-content/uploads/2021/03/logo-5.svg" alt="Logo 1" class="bg-white rounded-lg h-[100px] w-auto" />
+      <img src="https://secure8.io/wp-content/uploads/2021/03/logo-3.svg" alt="Logo 2" class="bg-white rounded-lg h-[100px] w-auto" />
+      <img src="https://secure8.io/wp-content/uploads/2021/03/logo-4.svg" alt="Logo 3" class="bg-white rounded-lg h-[100px] w-auto" />
+      <img src="https://secure8.io/wp-content/uploads/2021/03/logo-2.svg" alt="Logo 4" class="bg-white rounded-lg h-[100px] w-auto" />
+
+      <!-- Duplicate for infinite effect -->
+      <img src="https://secure8.io/wp-content/uploads/2021/03/logo-5.svg" alt="Logo 1" class="bg-white rounded-lg h-[100px] w-auto" />
+      <img src="https://secure8.io/wp-content/uploads/2021/03/logo-3.svg" alt="Logo 2" class="bg-white rounded-lg h-[100px] w-auto" />
+      <img src="https://secure8.io/wp-content/uploads/2021/03/logo-4.svg" alt="Logo 3" class="bg-white rounded-lg h-[100px] w-auto" />
+      <img src="https://secure8.io/wp-content/uploads/2021/03/logo-2.svg" alt="Logo 4" class="bg-white rounded-lg h-[100px] w-auto" />
+    </div>
+  </div>
+</section>
+  
+    <!-- ✅ JS: Mobile Menu Toggle -->
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+  
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  
+  </body>
+</html>
