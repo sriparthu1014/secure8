@@ -76,79 +76,130 @@
     </section>
   
      <!-- Services Section -->
-<section class="bg-[#d9ffe3] py-20 px-4 md:px-8">
-  <div class="max-w-7xl mx-auto text-center">
-    <h2 class="text-3xl md:text-6xl font-bold text-gray-900 mb-4">
-      How can we help you?
-    </h2>
-    <p class="text-gray-600 max-w-2xl mx-auto mb-12 font-semibold">
-      At Secure8, we provide expert-driven services across VAPT, cloud, IAM, and user awareness — helping you stay secure, compliant, and resilient.
-    </p>
-
-    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-      
-      <!-- Card 1 -->
-      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
-        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-hashtag fa-lg"></i></div>
-        <h3 class="font-bold text-lg mb-2 text-gray-900">Information Security</h3>
-        <p class="text-gray-600">
-          We protect your digital assets through strategic infosec programs,
-          <strong class="text-blue-600 font-medium">risk assessments</strong>, and compliance-driven security controls.
+    <section class="bg-[#d9ffe3] py-20 px-4">
+      <div class="max-w-7xl mx-auto text-center">
+        <!-- Heading -->
+        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          How can we help you?
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto font-semibold mb-12">
+          At Secure8, we provide expert-driven services across VAPT, cloud, IAM, and user awareness — helping you stay secure, compliant, and resilient.
         </p>
-      </div>
-      
+    
+        <!-- Grid: 4 per row with even spacing -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+          
+          <!-- CARD TEMPLATE START -->
+          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
+            <img src="/infosec.png" alt="Information security" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+              <div class="text-3xl text-black mb-2">
+                <i class="fa-sharp fa-solid fa-hashtag fa-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Information Security</h3>
+              <p class="text-sm font-semibold text-black">
+                We protect your digital assets through strategic infosec programs, risk assessments, and compliance-driven security controls.
+              </p>
+            </div>
+          </div>
+    
+          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
+            <img src="/PT.png" alt="Penetration Testing" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+              <div class="text-3xl text-black mb-2">
+                <i class="fa-sharp fa-solid fa-magnifying-glass fa-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Penetration Testing</h3>
+              <p class="text-sm font-semibold text-black">
+                <strong class="text-blue-600">Find weaknesses before hackers do</strong> <br> simulate real-world cyberattacks on your web and mobile applications to uncover vulnerabilities—so you can fix them before they’re exploited.
+              </p>
+            </div>
+          </div>
 
-      <!-- Card 2 -->
-      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
-        <div class="text-3xl text-green-700 mb-4">
-          <i class="fa-sharp fa-solid fa-magnifying-glass fa-lg"></i>
+          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
+            <img src="/api.png" alt="API Security Testing" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+              <div class="text-3xl text-black mb-2">
+                <i class="fa-sharp fa-solid fa-code fa-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">API Security Testing​​</h3>
+              <p class="text-sm font-semibold text-black">
+                <strong class="text-blue-600">Secure the connections that power your app</strong> <br>Your APIs are the backbone of your product. We test them for hidden flaws like IDOR, broken authentication, and injection risks to protect your data.
+
+
+              </p>
+            </div>
+          </div>
+
+          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
+            <img src="/CS.png" alt="Cloud Security" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+              <div class="text-3xl text-black mb-2">
+                <i class="fa-sharp fa-solid fa-cloud fa-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Cloud Security</h3>
+              <p class="text-sm font-semibold text-black">
+                <strong class="text-blue-600">Protect your AWS, Azure, or GCP environments</strong>. We identify misconfigurations and access issues to keep you secure and compliant.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
+            <img src="IAM.png" alt="Identity & Access Management (IAM)" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+              <div class="text-3xl text-black mb-2">
+                <i class="fa-sharp fa-solid fa-fingerprint fa-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Identity & Access Management (IAM)</h3>
+              <p class="text-sm font-semibold text-black">
+                <strong class="text-blue-600">Control who has access to what</strong><br>We help design and secure IAM systems so only the right people access the right resources—reducing insider risk and boosting compliance.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
+            <img src="/SAMS.png" alt="Security Awareness & Managed Services" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+              <div class="text-3xl text-black mb-2">
+                <i class="fa-sharp fa-solid fa-book-open fa-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Security Awareness & Managed Services</h3>
+              <p class="text-sm font-semibold text-black">
+                <strong class="text-blue-600">Build a security-first culture</strong><br>From team training to 24/7 managed security support, we help you strengthen internal defenses and meet industry standards like ISO 27001 and GDPR.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
+            <img src="/MAS.png" alt="Mobile Application Security
+            " class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+              <div class="text-3xl text-black mb-2">
+                <i class="fa-sharp fa-solid fa-mobile fa-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Mobile Application Security</h3>
+              <p class="text-sm font-semibold text-black">
+                <strong class="text-blue-600">Protect your Android and iOS apps from cyber threats</strong><br>We uncover vulnerabilities, insecure data handling, and broken authentication flows to ensure your mobile applications remain secure and trusted by users.
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
+            <img src="/cloud-bg.png" alt="Cloud Security" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+              <div class="text-3xl text-green-700 mb-2">
+                <i class="fa-sharp fa-solid fa-cloud fa-lg"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-black underline mb-2">Cloud Security</h3>
+              <p class="text-sm font-semibold text-black">
+                <strong class="text-blue-600">Protect your AWS, Azure, or GCP environments</strong>. We identify misconfigurations and access issues to keep you secure and compliant.
+              </p>
+            </div>
+          </div> -->
+
         </div>
-        <h3 class="font-bold text-lg mb-2 text-gray-900">Penetration Testing</h3>
-        <p class="text-gray-600">
-          We simulate real-world cyberattacks to uncover 
-          <strong class="text-blue-600 font-medium">vulnerabilities</strong> so you can fix them before they’re exploited.
-        </p>
       </div>
-      
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
-        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-code fa-lg"></i></div>
-        <h3 class="font-bold text-lg mb-2 text-gray-900">API Security Testing</h3>
-        <p class="text-gray-600">We test your APIs for hidden flaws like <strong class="text-blue-600 font-medium">IDOR</strong>, broken auth, and injection risks to protect your data.</p>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
-        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-cloud fa-lg"></i></div>
-        <h3 class="font-bold text-lg mb-2 text-gray-900">Cloud Security</h3>
-        <p class="text-gray-600"><strong class="text-blue-600 font-medium">Protect your AWS, Azure, or GCP environments</strong>. We identify misconfigurations and access issues to keep you secure and compliant.</p>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
-        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-fingerprint fa-lg"></i></div>
-        <h3 class="font-bold text-lg mb-2 text-gray-900">Identity & Access Management (IAM)</h3>
-        <p class="text-gray-600">We help secure IAM systems so only the <strong class="text-blue-600 font-medium">right people</strong> access the right resources — reducing insider risk and boosting compliance.</p>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="bg-white rounded-lg shadow p-[65px] text-left transform transition-transform duration-300 hover:scale-105">
-        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-book-open fa-lg"></i></div>
-        <h3 class="font-bold text-lg mb-2 text-gray-900">Security Awareness & Managed Services</h3>
-        <p class="text-gray-600">From training to 24/7 support, we help you <strong class="text-blue-600 font-medium">build a security-first culture</strong> and meet compliance standards like ISO 27001.</p>
-      </div>
-
-      <!-- Card 7 -->
-      <div class="bg-white rounded-lg shadow p-[65px] text-left sm:col-span-2 lg:col-span-1 transform transition-transform duration-300 hover:scale-105">
-        <div class="text-3xl text-green-700 mb-4"><i class="fa-sharp fa-solid fa-mobile fa-lg"></i></div>
-        <h3 class="font-bold text-lg mb-2 text-gray-900">Mobile Application Security</h3>
-        <p class="text-gray-600"> <strong class="text-blue-600 font-medium">Protect your Android and iOS apps from cyber threats</strong> <br>We uncover vulnerabilities in Android & iOS apps — from data handling to broken auth — ensuring your mobile apps remain trusted and secure.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 <section class="bg-[#a2fcba] py-16 px-4 text-center">
   <!-- Heading -->
@@ -209,6 +260,50 @@
     </div>
   </div>
 </section>
+
+<section class="bg-green-300 py-15 px-6">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- ✅ Heading Section (Full Width) -->
+    <div class="text-left mb-12">
+      <h2 class="text-5xl font-extrabold text-black text-center mb-4 leading-tight">Our Partners</h2>
+      <p class="text-gray-700 text-lg text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nihil.
+      </p>
+    </div>
+
+    <!-- ✅ 2-Column Content: Testimonial + CTA -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+      
+      <!-- ✨ Testimonial -->
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <h2 class="text-2xl font-extrabold text-gray-900 mb-4">“Amazing Designs and Quality Work!”</h2>
+        <p class="text-gray-700 text-base leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, omnis fuga placeat voluptates animi sed eius possimus sapiente est eos quisquam earum ratione cumque quo, pariatur atque? Assumenda, veniam quidem!
+        </p>
+        <div class="flex flex-col items-center mt-6">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe" class="w-14 h-14 rounded-full shadow mb-2" />
+          <h4 class="font-bold text-gray-900">John Doe</h4>
+          <p class="text-sm text-gray-500">CEO, ACME INC.</p>
+        </div>
+      </div>
+
+      <!-- ✨ CTA -->
+      <div class="bg-white rounded-lg shadow-lg p-8 h-full">
+        <h3 class="text-2xl font-extrabold text-black mb-4">Ready to Start Securing Your Business?</h3>
+        <p class="text-gray-700 text-base leading-relaxed mb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illo facere ea, animi hic quia quas aut! Consequuntur libero tempora maxime nisi, reiciendis enim eius ratione pariatur ducimus, porro rem?
+        </p>
+        <a href="tel:18001234567" class="inline-block mt-4 bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3 rounded transition duration-300">
+          1-800-1234-567
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
   
     <!-- ✅ JS: Mobile Menu Toggle -->
     <script>
@@ -219,6 +314,48 @@
         mobileMenu.classList.toggle("hidden");
       });
     </script>
+
+<!-- <script>
+  const items = document.querySelectorAll("#testimonial-carousel .carousel-item");
+  let index = 0;
+
+  setInterval(() => {
+    items[index].classList.add("hidden");
+    index = (index + 1) % items.length;
+    items[index].classList.remove("hidden");
+  }, 4000); // change every 4 seconds
+</script> -->
+
+<script>
+  const items = document.querySelectorAll("#testimonial-carousel .carousel-item");
+  const nextBtn = document.getElementById("nextBtn");
+  const prevBtn = document.getElementById("prevBtn");
+
+  let current = 0;
+
+  function showItem(index) {
+    items.forEach((item, i) => {
+      item.classList.toggle("hidden", i !== index);
+    });
+  }
+
+  nextBtn.addEventListener("click", () => {
+    current = (current + 1) % items.length;
+    showItem(current);
+  });
+
+  prevBtn.addEventListener("click", () => {
+    current = (current - 1 + items.length) % items.length;
+    showItem(current);
+  });
+
+  // // Optional: Auto-slide every 7s
+  // setInterval(() => {
+  //   current = (current + 1) % items.length;
+  //   showItem(current);
+  // }, 7000);
+</script>
+
   
   </body>
 </html>
