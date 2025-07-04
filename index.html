@@ -5,27 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </head>
-<body class="bg-white">
 
-    <!-- ✅ Navbar -->
-    <nav class="fixed w-full top-0 z-50 bg-[#b2dfc3cf] shadow-md">
+<body class="bg-white">
+  <!--Navbar-->
+    <nav class="fixed w-full top-0 z-50 bg-[#e1eebcd4] shadow-md" data-aos="fade-down" data-aos-duration="800">
       <div class="max-w-[1200px] mx-auto flex items-center justify-between px-4 py-4 md:px-12">
         
-        <!-- Logo -->
-        <div class="flex items-center">
+        <!-- Secure8 Logo -->
+        <div class="flex items-center" data-aos="fade-right" data-aos-delay="100">
           <a href="#">
             <img src="https://secure8.io/wp-content/uploads/2025/06/Secure8-1-1.png" alt="Secure8 Logo" class="h-10 w-auto" />
           </a>
         </div>
-  
         <!-- Hamburger (mobile only) -->
-        <div class="md:hidden">
+        <div class="md:hidden" data-aos="fade-left" data-aos-delay="200">
           <button id="menuToggle" class="text-3xl font-bold">&#9776;</button>
         </div>
-  
+
         <!-- Desktop Nav Links -->
-        <div id="navLinks" class="hidden md:flex items-center gap-6">
+        <div id="navLinks" class="hidden md:flex items-center gap-6" data-aos="fade-left" data-aos-delay="300">
           <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg transition-all">Home</a>
           <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 pl-3 pr-3 rounded-lg transition-all">About</a>
           <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 pl-3 pr-3 rounded-lg transition-all">Services</a>
@@ -36,9 +38,9 @@
           </a>
         </div>
       </div>
-  
+    
       <!-- Mobile Menu -->
-      <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-[#b2dfdb]">
+      <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-[#b2dfdb]" data-aos="fade-down" data-aos-delay="400">
         <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">Home</a>
         <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">About</a>
         <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">Services</a>
@@ -49,197 +51,323 @@
         </a>
       </div>
     </nav>
-  
-    <!-- ✅ Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center text-white pt-24 bg-cover bg-center" style="background-image: url('images/hacker.png');">
-      <div class="absolute inset-0 bg-black/70"></div> <!-- Overlay -->
-  
-      <div class="relative z-10 max-w-6xl mx-auto px-6 text-center md:text-left">
-        <p class="text-xl mb-4">Simplifying Security. Strengthening Identity.</p>
+
+    <!-- ✅ Include AOS CSS and JS -->
+    <section class="relative min-h-screen flex items-center justify-center text-white pt-24 bg-cover bg-center"
+    style="background-image: url('images/hacker.png');">
+
+<!-- Overlay -->
+<div class="absolute inset-0 bg-black/70"></div>
+
+<!-- Content Layer -->
+<div class="relative z-10 max-w-6xl mx-auto px-6 text-center md:text-left">
+
+<!-- Subtitle -->
+<p class="text-xl mb-4"
+  data-aos="fade-down"
+  data-aos-duration="800"
+  data-aos-once="true">
+ Simplifying Security. Strengthening Identity.
+</p>
+
+<!-- Title -->
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+   data-aos="fade-up"
+   data-aos-delay="100"
+   data-aos-duration="1000"
+   data-aos-once="true">
+ Your Trusted Partner in <br />
+ <span class="text-white">Cybersecurity</span><br />
+ and Identity Management
+</h1>
+
+<!-- Description -->
+<p class="text-lg max-w-3xl mx-auto md:mx-0 leading-relaxed mb-8"
+  data-aos="fade-up"
+  data-aos-delay="300"
+  data-aos-duration="1000"
+  data-aos-once="true">
+ <strong>Secure8</strong> delivers cutting-edge <strong>Cybersecurity</strong> and <strong>IAM solutions</strong> to safeguard your applications. 
+ From <strong>VAPT services</strong> to identity governance, we help businesses stay secure, compliant, and prepared for evolving cyber threats.
+</p>
+
+<!-- 🌟 Animated CTA Button (Instant on load) -->
+<div data-aos="zoom-in"
+    data-aos-delay="500"
+    data-aos-duration="1000"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-once="true">
+ <a href="#"
+    class="inline-block px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-full shadow-lg transition-all duration-500 ease-in-out">
+    🚀 SAVE CHANGES
+ </a>
+</div>
+
+</div>
+</section>
+    
+    <section class="bg-gradient-to-b from-[#eafff4] to-[#90C67C] py-20 px-6 md:px-10">
+      <div class="max-w-6xl mx-auto">
         
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-          Your Trusted Partner in <br />
-          <span class="text-white">Cybersecurity</span><br />
-          and Identity Management
-        </h1>
-  
-        <p class="text-lg max-w-3xl mx-auto md:mx-0 leading-relaxed mb-8">
-          <strong>Secure8</strong> delivers cutting-edge <strong>Cybersecurity</strong> and <strong>IAM solutions</strong> to safeguard your applications. 
-          From <strong>VAPT services</strong> to identity governance, we help businesses stay secure, compliant, and prepared for evolving cyber threats.
-        </p>
-  
-        <a href="#"
-           class="inline-block px-6 py-3 bg-green-400 hover:bg-green-500 text-black font-bold rounded-full shadow transition duration-300">
-           GET STARTED
-        </a>
-      </div>
-    </section>
-  
-     <!-- Services Section -->
-    <section class="bg-[#d9ffe3] py-20 px-4">
-      <div class="max-w-7xl mx-auto text-center">
-        <!-- Heading -->
-        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-          How can we help you?
-        </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto font-semibold mb-12">
-          At Secure8, we provide expert-driven services across VAPT, cloud, IAM, and user awareness — helping you stay secure, compliant, and resilient.
-        </p>
-    
-        <!-- Grid: 4 per row with even spacing -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-          
-          <!-- CARD TEMPLATE START -->
-          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
-            <img src="images/info-sec.png" alt="Information security" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
-            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-              <div class="text-3xl text-black mb-2">
-                <i class="fa-sharp fa-solid fa-hashtag fa-lg"></i>
-              </div>
-              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Information Security</h3>
-              <p class="text-sm font-semibold text-black">
-                We protect your digital assets through strategic infosec programs, risk assessments, and compliance-driven security controls.
-              </p>
-            </div>
-          </div>
-    
-          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
-            <img src="images/penetration-testing.png" alt="Penetration Testing" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
-            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-              <div class="text-3xl text-black mb-2">
-                <i class="fa-sharp fa-solid fa-magnifying-glass fa-lg"></i>
-              </div>
-              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Penetration Testing</h3>
-              <p class="text-sm font-semibold text-black">
-                <strong class="text-blue-600">Find weaknesses before hackers do</strong> <br> simulate real-world cyberattacks on your web and mobile applications to uncover vulnerabilities—so you can fix them before they’re exploited.
-              </p>
-            </div>
-          </div>
-
-          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
-            <img src="images/application-security.png" alt="API Security Testing" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
-            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-              <div class="text-3xl text-black mb-2">
-                <i class="fa-sharp fa-solid fa-code fa-lg"></i>
-              </div>
-              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">API Security Testing​​</h3>
-              <p class="text-sm font-semibold text-black">
-                <strong class="text-blue-600">Secure the connections that power your app</strong> <br>Your APIs are the backbone of your product. We test them for hidden flaws like IDOR, broken authentication, and injection risks to protect your data.
-
-
-              </p>
-            </div>
-          </div>
-
-          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
-            <img src="images/cyber-security.png" alt="Cloud Security" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
-            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-              <div class="text-3xl text-black mb-2">
-                <i class="fa-sharp fa-solid fa-cloud fa-lg"></i>
-              </div>
-              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Cloud Security</h3>
-              <p class="text-sm font-semibold text-black">
-                <strong class="text-blue-600">Protect your AWS, Azure, or GCP environments</strong>. We identify misconfigurations and access issues to keep you secure and compliant.
-              </p>
-            </div>
-          </div>
-
-          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
-            <img src="images/i-a-m.png" alt="Identity & Access Management (IAM)" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
-            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-              <div class="text-3xl text-black mb-2">
-                <i class="fa-sharp fa-solid fa-fingerprint fa-lg"></i>
-              </div>
-              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Identity & Access Management (IAM)</h3>
-              <p class="text-sm font-semibold text-black">
-                <strong class="text-blue-600">Control who has access to what</strong><br>We help design and secure IAM systems so only the right people access the right resources—reducing insider risk and boosting compliance.
-              </p>
-            </div>
-          </div>
-
-          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
-            <img src="images/security-awarness-managed-service.png" alt="Security Awareness & Managed Services" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
-            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-              <div class="text-3xl text-black mb-2">
-                <i class="fa-sharp fa-solid fa-book-open fa-lg"></i>
-              </div>
-              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Security Awareness & Managed Services</h3>
-              <p class="text-sm font-semibold text-black">
-                <strong class="text-blue-600">Build a security-first culture</strong><br>From team training to 24/7 managed security support, we help you strengthen internal defenses and meet industry standards like ISO 27001 and GDPR.
-              </p>
-            </div>
-          </div>
-
-          <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
-            <img src="images/mobile-applictaion-security.png" alt="Mobile Application Security
-            " class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
-            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-              <div class="text-3xl text-black mb-2">
-                <i class="fa-sharp fa-solid fa-mobile fa-lg"></i>
-              </div>
-              <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Mobile Application Security</h3>
-              <p class="text-sm font-semibold text-black">
-                <strong class="text-blue-600">Protect your Android and iOS apps from cyber threats</strong><br>We uncover vulnerabilities, insecure data handling, and broken authentication flows to ensure your mobile applications remain secure and trusted by users.
-              </p>
-            </div>
-          </div>
-
+        <!-- 🔰 Intro -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+            👋 Welcome to <span class="text-green-600">Secure8 Technologies and Services</span>
+          </h2>
+          <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+            Your gateway to the cybersecurity world — empowering individuals and businesses to stay safe in the digital age.
+          </p>
         </div>
+    
+        <!-- 🔐 Informational Content -->
+        <div class="space-y-10 text-gray-800 text-base md:text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            <strong class="text-green-700">Secure8 Technologies and Services</strong> is a cybersecurity company dedicated to protecting websites, applications, and digital infrastructure from evolving threats. We offer professional services such as Ethical Hacking, Penetration Testing, Security Audits, Digital Forensics, and Threat Response to businesses, governments, and individuals.
+          </p>
+    
+          <p>
+            Our mission is not only to secure systems but also to empower <strong class="text-green-700">students and freshers</strong> with real-world cybersecurity skills. We train you on how hackers think and operate — and more importantly, how to defend against them using tools like Kali Linux, Nmap, Wireshark, Burp Suite, and Metasploit.
+          </p>
+    
+          <p>
+            We provide hands-on experience through <strong class="text-blue-600">CTF challenges</strong>, <strong class="text-blue-600">live VAPT sessions</strong>, and real-time projects. You’ll also earn certifications and internship exposure that prepare you for the job market and help you crack globally recognized credentials like <strong>CEH, OSCP, and CompTIA Security+</strong>.
+          </p>
+    
+          <p>
+            Apart from technical skills, Secure8 nurtures your soft skills and ethical mindset. You'll learn to document vulnerabilities, report incidents, and follow legal protocols — all while being mentored by real-world cybersecurity professionals who’ve tackled actual cyberattacks.
+          </p>
+        </div>
+    
+        <!-- 📞 CTA Button -->
+        <div class="flex justify-center mt-16" data-aos="zoom-in">
+          <a href="#contact" class="inline-block bg-green-700 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition duration-300">
+            🚀 Start Your Cyber Journey with Secure8
+          </a>
+        </div>
+    
       </div>
     </section>
+    
+     <!-- Services Section -->
+     <section class="bg-gradient-to-b from-[#eafff4] to-[#67AE6E] py-20 px-4">
+       <div class="max-w-7xl mx-auto text-center">
+         
+         <!-- 🟢 Heading -->
+         <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4" data-aos="fade-up">
+           Our Services
+         </h2>
+         <p class="text-gray-600 max-w-2xl mx-auto font-semibold mb-12" data-aos="fade-up" data-aos-delay="100">
+           At Secure8, we provide expert-driven services across VAPT, cloud, IAM, and user awareness — helping you stay secure, compliant, and resilient.
+         </p>
+     
+         <!-- 🟢 Cards Grid -->
+         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+           
+           <!-- 🔒 Card 1 -->
+           <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl" data-aos="zoom-in" data-aos-delay="100">
+             <img src="#" alt="Security Consulting" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+             <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+               <div class="text-3xl text-black mb-2">
+                 <i class="fas fa-shield-halved"></i>
+               </div>
+               <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Security Consulting</h3>
+               <p class="text-sm font-semibold text-black">
+                 <strong class="text-blue-600">Find weaknesses before hackers do</strong><br>
+                 Simulate real-world attacks on your systems and secure them before it's too late.
+               </p>
+             </div>
+           </div>
+     
+           <!-- 🧠 Card 2 -->
+           <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl" data-aos="zoom-in" data-aos-delay="200">
+             <img src="images/info-sec.png" alt="Information Security" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+             <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+               <div class="text-3xl text-black mb-2">
+                 <i class="fas fa-lock"></i>
+               </div>
+               <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Information Security</h3>
+               <p class="text-sm font-semibold text-black">
+                 We protect your digital assets through infosec strategy, audits, and policy controls.
+               </p>
+             </div>
+           </div>
+     
+           <!-- 🔍 Card 3 -->
+           <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl" data-aos="zoom-in" data-aos-delay="300">
+             <img src="images/penetration-testing.png" alt="Penetration Testing" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+             <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+               <div class="text-3xl text-black mb-2">
+                 <i class="fas fa-bug"></i>
+               </div>
+               <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Penetration Testing</h3>
+               <p class="text-sm font-semibold text-black">
+                 Simulate hacking attacks on web and mobile apps to uncover real vulnerabilities.
+               </p>
+             </div>
+           </div>
+     
+           <!-- 🧪 Card 4 -->
+           <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl" data-aos="zoom-in" data-aos-delay="400">
+             <img src="images/application-security.png" alt="API Security" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+             <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+               <div class="text-3xl text-black mb-2">
+                 <i class="fas fa-code"></i>
+               </div>
+               <h3 class="text-lg font-extrabold text-green-700 underline mb-2">API Security Testing</h3>
+               <p class="text-sm font-semibold text-black">
+                 Prevent injection, IDOR, auth bypass, and more in your backend APIs.
+               </p>
+             </div>
+           </div>
+     
+           <!-- ☁️ Card 5 -->
+           <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl" data-aos="zoom-in" data-aos-delay="500">
+             <img src="images/cyber-security.png" alt="Cloud Security" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+             <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+               <div class="text-3xl text-black mb-2">
+                 <i class="fas fa-cloud"></i>
+               </div>
+               <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Cloud Security</h3>
+               <p class="text-sm font-semibold text-black">
+                 AWS, Azure, GCP — we help you stay compliant and secure with cloud best practices.
+               </p>
+             </div>
+           </div>
+     
+           <!-- 🔐 Card 6 -->
+           <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl" data-aos="zoom-in" data-aos-delay="600">
+             <img src="images/i-a-m.png" alt="IAM" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+             <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+               <div class="text-3xl text-black mb-2">
+                 <i class="fas fa-fingerprint"></i>
+               </div>
+               <h3 class="text-lg font-extrabold text-green-700 underline mb-2">IAM</h3>
+               <p class="text-sm font-semibold text-black">
+                 Only the right people get access to the right resources — securely and efficiently.
+               </p>
+             </div>
+           </div>
+     
+           <!-- 📚 Card 7 -->
+           <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl" data-aos="zoom-in" data-aos-delay="700">
+             <img src="images/security-awarness-managed-service.png" alt="Awareness & Managed Security" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+             <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+               <div class="text-3xl text-black mb-2">
+                 <i class="fas fa-users-cog"></i>
+               </div>
+               <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Awareness & Services</h3>
+               <p class="text-sm font-semibold text-black">
+                 Build cyber-smart teams with training and get 24/7 monitoring with our experts.
+               </p>
+             </div>
+           </div>
+     
+           <!-- 📱 Card 8 -->
+           <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl" data-aos="zoom-in" data-aos-delay="800">
+             <img src="images/mobile-applictaion-security.png" alt="Mobile Security" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
+             <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+               <div class="text-3xl text-black mb-2">
+                 <i class="fas fa-mobile-alt"></i>
+               </div>
+               <h3 class="text-lg font-extrabold text-green-700 underline mb-2">Mobile App Security</h3>
+               <p class="text-sm font-semibold text-black">
+                 Secure your iOS and Android apps against insecure storage, auth bugs, and more.
+               </p>
+             </div>
+           </div>
+     
+         </div>
+       </div>
+     </section>
+    
+<section class="bg-gradient-to-b from-[#eafff4] to-[#90C67C] py-16 px-4 text-center">
 
-<section class="bg-[#a2fcba] py-16 px-4 text-center">
   <!-- Heading -->
-  <h2 class="text-3xl md:text-5xl font-extrabold text-slate-800 mb-4">
+  <h2 class="text-3xl md:text-5xl font-extrabold text-slate-800 mb-4"
+      data-aos="fade-down"
+      data-aos-duration="800"
+      data-aos-once="true">
     Kickstarting a Cyber-Ready <br class="md:hidden" />
     Generation
   </h2>
 
   <!-- Subheading -->
-  <p class="text-gray-600 text-lg font-semibold max-w-2xl mx-auto mb-[40px]">
+  <p class="text-gray-600 text-lg font-semibold max-w-2xl mx-auto mb-[40px]"
+     data-aos="fade-up"
+     data-aos-delay="200"
+     data-aos-duration="800"
+     data-aos-once="true">
     Our mission is to train, upskill, and empower the next wave of cybersecurity professionals — starting now.
   </p>
 
   <!-- Image Section -->
   <div class="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-[100px] mb-20">
+
     <!-- Image 1 -->
     <img 
       src="https://media.istockphoto.com/id/1309899404/photo/middle-aged-hacker-making-cryptocurrency-fraud-using-virus-software-and-computer-interface.jpg?s=612x612&w=0&k=20&c=QQpmYADwCiklnGMQTdJIypvqSGN25EzAPC-AcAywsLA=" 
       alt="Hacker image"
-      class="w-60 md:w-72 rounded-lg shadow transform transition-transform duration-300 hover:scale-105" />
-  
+      class="w-60 md:w-72 rounded-lg shadow transform transition-transform duration-300 hover:scale-105"
+      data-aos="zoom-in"
+      data-aos-delay="300"
+      data-aos-duration="800"
+      data-aos-once="true"
+    />
+
     <!-- Image 2 -->
     <img 
       src="https://media.istockphoto.com/id/1386672473/photo/businessman-using-a-computer-to-document-management-concept-online-documentation-database-and.jpg?s=612x612&w=0&k=20&c=c3IDkl2DDJkUKrH1z7fPqw4XXoIn7CfaS14DK8xGqJQ=" 
       alt="Cybersecurity image"
-      class="w-60 md:w-72 rounded-lg shadow transform transition-transform duration-300 hover:scale-105" />
+      class="w-60 md:w-72 rounded-lg shadow transform transition-transform duration-300 hover:scale-105"
+      data-aos="zoom-in"
+      data-aos-delay="500"
+      data-aos-duration="800"
+      data-aos-once="true"
+    />
   </div>
-  
 
   <!-- CTA Button -->
   <a href="#"
-     class="inline-block bg-green-600 text-slate-950 font-bold uppercase px-4 py-2 mb rounded-lg border border-[#449048] hover:bg-green-500 transition-all">
+     class="inline-block bg-green-600 text-slate-950 font-bold uppercase px-4 py-2 rounded-lg border border-[#449048] hover:bg-green-500 transition-all"
+     data-aos="fade-up"
+     data-aos-delay="600"
+     data-aos-duration="1000"
+     data-aos-once="true">
     Join the Academy
   </a>
 </section>
+
+
 <!--Customers-->
-<section class="bg-[#d9ffe3] py-20 text-center">
+
+<section class="bg-gradient-to-b from-[#eafff4] to-[#67AE6E] py-20 text-center">
   <!-- Heading -->
-  <h2 class="text-3xl md:text-5xl font-extrabold text-gray-800">Our Customers</h2>
-  <p class="mt-5 text-lg text-gray-500 font-semibold">
+  <h2 class="text-3xl md:text-5xl font-extrabold text-gray-800"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-once="true">
+    Our Customers
+  </h2>
+
+  <!-- Subheading -->
+  <p class="mt-5 text-lg text-gray-500 font-semibold"
+     data-aos="fade-up"
+     data-aos-delay="200"
+     data-aos-duration="800"
+     data-aos-once="true">
     Trusted by industry leaders worldwide
   </p>
 
-  <!-- Logo Marquee -->
+  <!-- Logo Marquee (No motion added here) -->
   <div class="overflow-hidden w-full mt-12">
-    <div class="flex scrolling-wrapper whitespace-nowrap items-center gap-20 px-10">
+    <div class="flex animate-marquee whitespace-nowrap items-center gap-20 px-10">
       <!-- Logos (duplicated for seamless scroll) -->
       <img src="https://secure8.io/wp-content/uploads/2021/03/logo-5.svg" alt="Logo 1" class="bg-white rounded-lg h-[100px] w-auto" />
       <img src="https://secure8.io/wp-content/uploads/2021/03/logo-3.svg" alt="Logo 2" class="bg-white rounded-lg h-[100px] w-auto" />
       <img src="https://secure8.io/wp-content/uploads/2021/03/logo-4.svg" alt="Logo 3" class="bg-white rounded-lg h-[100px] w-auto" />
       <img src="https://secure8.io/wp-content/uploads/2021/03/logo-2.svg" alt="Logo 4" class="bg-white rounded-lg h-[100px] w-auto" />
 
-      <!-- Duplicate for infinite effect -->
+      <!-- Duplicate for infinite scroll -->
       <img src="https://secure8.io/wp-content/uploads/2021/03/logo-5.svg" alt="Logo 1" class="bg-white rounded-lg h-[100px] w-auto" />
       <img src="https://secure8.io/wp-content/uploads/2021/03/logo-3.svg" alt="Logo 2" class="bg-white rounded-lg h-[100px] w-auto" />
       <img src="https://secure8.io/wp-content/uploads/2021/03/logo-4.svg" alt="Logo 3" class="bg-white rounded-lg h-[100px] w-auto" />
@@ -248,22 +376,22 @@
   </div>
 </section>
 
-<section class="bg-green-300 py-15 px-6">
+<section class="bg-gradient-to-b from-[#eafff4] to-[#90C67C] py-15 px-6">
   <div class="max-w-7xl mx-auto">
 
-    <!-- ✅ Heading Section (Full Width) -->
-    <div class="text-left mb-12">
+    <!-- ✅ Heading Section -->
+    <div class="text-left mb-12" data-aos="fade-up" data-aos-duration="1000">
       <h2 class="text-5xl font-extrabold text-black text-center mb-4 leading-tight">Our Partners</h2>
       <p class="text-gray-700 text-lg text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nihil.
       </p>
     </div>
 
-    <!-- ✅ 2-Column Content: Testimonial + CTA -->
+    <!-- ✅ 2-Column Content -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-      
+
       <!-- ✨ Testimonial -->
-      <div class="bg-white rounded-lg shadow-lg p-8">
+      <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-right" data-aos-duration="1000">
         <h2 class="text-2xl font-extrabold text-gray-900 mb-4">“Amazing Designs and Quality Work!”</h2>
         <p class="text-gray-700 text-base leading-relaxed">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, omnis fuga placeat voluptates animi sed eius possimus sapiente est eos quisquam earum ratione cumque quo, pariatur atque? Assumenda, veniam quidem!
@@ -276,7 +404,7 @@
       </div>
 
       <!-- ✨ CTA -->
-      <div class="bg-white rounded-lg shadow-lg p-8 h-full">
+      <div class="bg-white rounded-lg shadow-lg p-8 h-full" data-aos="fade-left" data-aos-duration="1000">
         <h3 class="text-2xl font-extrabold text-black mb-4">Ready to Start Securing Your Business?</h3>
         <p class="text-gray-700 text-base leading-relaxed mb-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illo facere ea, animi hic quia quas aut! Consequuntur libero tempora maxime nisi, reiciendis enim eius ratione pariatur ducimus, porro rem?
@@ -291,15 +419,102 @@
   </div>
 </section>
 
-  
+<!-- Include AOS animation CSS & JS -->
+<!-- Main Footer -->
+<footer class="bg-gradient-to-b from-[#eafff4] to-[#67AE6E] text-white px-6 md:px-20 py-14">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12" data-aos="fade-up" data-aos-duration="1200">
+    
+    <!-- Column 1: Logo & Mission -->
+    <div>
+      <img src="https://secure8.io/wp-content/uploads/2025/06/Secure8-1-1.png" alt="Secure8 Logo"
+        class="h-12 mb-4 hover:scale-105 transition duration-300" />
+      <p class="text-sm text-gray-800 leading-6">
+        <strong>Secure8 Technologies & Services</strong> is dedicated to creating a secure digital world. We provide world-class cybersecurity services, training, and tools to protect businesses and individuals from cyber threats.
+      </p>
+      <div class="flex gap-4 mt-5 text-xl text-gray-700">
+        <a href="#" class="hover:text-green-900 transition transform hover:scale-110"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="hover:text-yellow-600 transition transform hover:scale-110"><i class="far fa-envelope"></i></a>
+        <a href="#" class="hover:text-blue-500 transition transform hover:scale-110"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-sky-500 transition transform hover:scale-110"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-pink-500 transition transform hover:scale-110"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-blue-700 transition transform hover:scale-110"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div>
+      <h3 class="text-lg font-bold mb-4 text-green-900">Quick Links</h3>
+      <ul class="space-y-2 text-sm text-gray-800">
+        <li><a href="#" class="hover:text-green-700 transition">Home</a></li>
+        <li><a href="#" class="hover:text-green-700 transition">About Us</a></li>
+        <li><a href="#" class="hover:text-green-700 transition">Services</a></li>
+        <li><a href="#" class="hover:text-green-700 transition">Academy</a></li>
+        <li><a href="#" class="hover:text-green-700 transition">Careers</a></li>
+        <li><a href="#" class="hover:text-green-700 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Student Zone -->
+    <div>
+      <h3 class="text-lg font-bold mb-4 text-green-900">Student Zone</h3>
+      <ul class="space-y-2 text-sm text-gray-800">
+        <li><a href="#" class="hover:text-green-700 transition">Cybersecurity Training</a></li>
+        <li><a href="#" class="hover:text-green-700 transition">Internship Opportunities</a></li>
+        <li><a href="#" class="hover:text-green-700 transition">Workshops & Seminars</a></li>
+        <li><a href="#" class="hover:text-green-700 transition">Certifications</a></li>
+        <li><a href="#" class="hover:text-green-700 transition">Hackathons</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Newsletter & Contact -->
+    <div>
+      <h3 class="text-lg font-bold mb-4 text-green-900">Stay Updated</h3>
+      <p class="text-sm text-gray-800 mb-4">Subscribe to our newsletter for cybersecurity updates, tips, and events.</p>
+      <form class="flex flex-col gap-3">
+        <input type="email" placeholder="Enter your email"
+          class="px-4 py-2 rounded bg-gray-100 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-600" />
+        <button type="submit"
+          class="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded transition">Subscribe</button>
+      </form>
+      <div class="mt-6 text-sm text-gray-700 space-y-1">
+        <p><strong>Address:</strong> Rt. 66, Downtown, Washington, DC</p>
+        <p><strong>Email:</strong> <a href="mailto:info@example.com" class="hover:text-green-800">info@example.com</a></p>
+        <p><strong>Call:</strong> <a href="tel:18001234567" class="hover:text-green-800">+1 800 123 4567</a></p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<div class="bg-gradient-to-b from-[#eafff4] to-[#90C67C] border-t border-green-700 py-4 text-center">
+  <p class="text-sm text-gray-800 font-medium">
+    © 2025 Secure8 Technologies & Services. All rights reserved.
+  </p>
+</div>
+
     <!-- ✅ JS: Mobile Menu Toggle -->
     <script>
+
+    AOS.init();
+
+
       const menuToggle = document.getElementById("menuToggle");
       const mobileMenu = document.getElementById("mobileMenu");
   
       menuToggle.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
       });
+
+
+
+      document.addEventListener("DOMContentLoaded", () => {
+    AOS.init({
+      once: true,                // animate only once
+      offset: 0,                 // trigger animation as soon as in view
+      startEvent: 'DOMContentLoaded'
+    });
+  });
+
     </script>
 
   
