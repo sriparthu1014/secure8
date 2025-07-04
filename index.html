@@ -12,45 +12,46 @@
 
 <body class="bg-white">
   <!--Navbar-->
-    <nav class="fixed w-full top-0 z-50 bg-[#e1eebcd4] shadow-md" data-aos="fade-down" data-aos-duration="800">
-      <div class="max-w-[1200px] mx-auto flex items-center justify-between px-4 py-4 md:px-12">
-        
-        <!-- Secure8 Logo -->
-        <div class="flex items-center" data-aos="fade-right" data-aos-delay="100">
-          <a href="#">
-            <img src="https://secure8.io/wp-content/uploads/2025/06/Secure8-1-1.png" alt="Secure8 Logo" class="h-10 w-auto" />
-          </a>
-        </div>
-        <!-- Hamburger (mobile only) -->
-        <div class="md:hidden" data-aos="fade-left" data-aos-delay="200">
-          <button id="menuToggle" class="text-3xl font-bold">&#9776;</button>
-        </div>
-
-        <!-- Desktop Nav Links -->
-        <div id="navLinks" class="hidden md:flex items-center gap-6" data-aos="fade-left" data-aos-delay="300">
-          <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg transition-all">Home</a>
-          <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 pl-3 pr-3 rounded-lg transition-all">About</a>
-          <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 pl-3 pr-3 rounded-lg transition-all">Services</a>
-          <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 pl-3 pr-3 rounded-lg transition-all">Academy</a>
-          <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 pl-3 pr-3 rounded-lg transition-all">Contact</a>
-          <a href="#" class="bg-green-600 text-slate-950 font-bold uppercase px-4 py-2 rounded-lg border border-[#449048] hover:bg-green-500 transition-all">
-            Request Quote
-          </a>
-        </div>
+  <nav class="fixed w-full top-0 z-50 bg-[#e1eebcd4] shadow-md" data-aos="fade-down" data-aos-duration="800">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between px-4 py-4 md:px-12">
+  
+      <!-- Logo -->
+      <div class="flex items-center" data-aos="fade-right" data-aos-delay="100">
+        <a href="#">
+          <img src="https://secure8.io/wp-content/uploads/2025/06/Secure8-1-1.png" alt="Secure8 Logo" class="h-10 w-auto" />
+        </a>
       </div>
-    
-      <!-- Mobile Menu -->
-      <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-[#b2dfdb]" data-aos="fade-down" data-aos-delay="400">
-        <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">Home</a>
-        <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">About</a>
-        <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">Services</a>
-        <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">Academy</a>
-        <a href="#" class="block py-2 uppercase hover:bg-green-600 pt1- pb-1 pl-3 pr-3 rounded-lg font-bold text-black">Contact</a>
-        <a href="#" class="block mt-2 bg-[#66bb6a] text-black font-bold uppercase px-4 py-2 rounded-lg border border-[#449048] hover:bg-green-500 transition-all">
+  
+      <!-- Hamburger Icon (Mobile Only) -->
+      <div class="md:hidden" data-aos="fade-left" data-aos-delay="200">
+        <button id="menuToggle" class="text-3xl font-bold focus:outline-none">&#9776;</button>
+      </div>
+  
+      <!-- Desktop Nav -->
+      <div id="navLinks" class="hidden md:flex items-center gap-6 md:gap-6" data-aos="fade-left" data-aos-delay="300">
+        <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 px-4 rounded-lg transition-all">Home</a>
+        <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 px-4 rounded-lg transition-all">About</a>
+        <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 px-4 rounded-lg transition-all">Services</a>
+        <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 px-4 rounded-lg transition-all">Academy</a>
+        <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 pt-1 pb-1 px-4 rounded-lg transition-all">Contact</a>
+        <a href="#" class="bg-green-600 text-slate-950 font-bold uppercase px-4 py-2 rounded-lg border border-[#449048] hover:bg-green-500 transition-all">
           Request Quote
         </a>
       </div>
-    </nav>
+    </div>
+  
+    <!-- ✅ Mobile Menu (Initially Hidden) -->
+    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 bg-[#b2dfdb]">
+      <a href="#" class="block py-2 uppercase hover:bg-green-600 px-4 rounded-lg font-bold text-black">Home</a>
+      <a href="#" class="block py-2 uppercase hover:bg-green-600 px-4 rounded-lg font-bold text-black">About</a>
+      <a href="#" class="block py-2 uppercase hover:bg-green-600 px-4 rounded-lg font-bold text-black">Services</a>
+      <a href="#" class="block py-2 uppercase hover:bg-green-600 px-4 rounded-lg font-bold text-black">Academy</a>
+      <a href="#" class="block py-2 uppercase hover:bg-green-600 px-4 rounded-lg font-bold text-black">Contact</a>
+      <a href="#" class="block mt-2 bg-[#66bb6a] text-black font-bold uppercase px-4 py-2 rounded-lg border border-[#449048] hover:bg-green-500 transition-all">
+        Request Quote
+      </a>
+    </div>
+  </nav>
 
     <!-- ✅ Include AOS CSS and JS -->
     <section class="relative min-h-screen flex items-center justify-center text-white pt-40 pb-18 bg-cover bg-center"
@@ -494,18 +495,13 @@
 
     <!-- ✅ JS: Mobile Menu Toggle -->
     <script>
-
-    AOS.init();
-
-
-      const menuToggle = document.getElementById("menuToggle");
-      const mobileMenu = document.getElementById("mobileMenu");
-  
-      menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
+    document.getElementById('menuToggle').addEventListener('click', function () {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+  });
 
 
+  AOS.init();
 
       document.addEventListener("DOMContentLoaded", () => {
     AOS.init({
