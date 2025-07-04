@@ -184,19 +184,6 @@
             </div>
           </div>
 
-          <!-- <div class="relative group w-full max-w-xs mx-auto aspect-[3/4] overflow-hidden rounded-[20px] hover:shadow-green-400 shadow-2xl">
-            <img src="/cloud-bg.png" alt="Cloud Security" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
-            <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
-              <div class="text-3xl text-green-700 mb-2">
-                <i class="fa-sharp fa-solid fa-cloud fa-lg"></i>
-              </div>
-              <h3 class="text-lg font-extrabold text-black underline mb-2">Cloud Security</h3>
-              <p class="text-sm font-semibold text-black">
-                <strong class="text-blue-600">Protect your AWS, Azure, or GCP environments</strong>. We identify misconfigurations and access issues to keep you secure and compliant.
-              </p>
-            </div>
-          </div> -->
-
         </div>
       </div>
     </section>
@@ -314,47 +301,6 @@
         mobileMenu.classList.toggle("hidden");
       });
     </script>
-
-<!-- <script>
-  const items = document.querySelectorAll("#testimonial-carousel .carousel-item");
-  let index = 0;
-
-  setInterval(() => {
-    items[index].classList.add("hidden");
-    index = (index + 1) % items.length;
-    items[index].classList.remove("hidden");
-  }, 4000); // change every 4 seconds
-</script> -->
-
-<script>
-  const items = document.querySelectorAll("#testimonial-carousel .carousel-item");
-  const nextBtn = document.getElementById("nextBtn");
-  const prevBtn = document.getElementById("prevBtn");
-
-  let current = 0;
-
-  function showItem(index) {
-    items.forEach((item, i) => {
-      item.classList.toggle("hidden", i !== index);
-    });
-  }
-
-  nextBtn.addEventListener("click", () => {
-    current = (current + 1) % items.length;
-    showItem(current);
-  });
-
-  prevBtn.addEventListener("click", () => {
-    current = (current - 1 + items.length) % items.length;
-    showItem(current);
-  });
-
-  // // Optional: Auto-slide every 7s
-  // setInterval(() => {
-  //   current = (current + 1) % items.length;
-  //   showItem(current);
-  // }, 7000);
-</script>
 
   
   </body>
