@@ -9,51 +9,59 @@
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+<style>
+   body {
+    overflow-x: hidden;
+  }
+</style>
 
 </head>
 
-<body class="bg-white">
+<body class="bg-white overflow-x-hidden">
   <!-- Navbar -->
-<nav class="fixed w-full top-0 z-50 bg-[#b2dfc3cf] shadow-md">
-  <div class="max-w-[1200px] mx-auto flex items-center justify-between px-4 py-4 md:px-12">
-
-    <!-- Logo -->
-    <div class="flex items-center">
-      <a href="#">
-        <img src="https://secure8.io/wp-content/uploads/2025/06/Secure8-1-1.png" alt="Secure8 Logo" class="h-10 w-auto" />
-      </a>
+  <nav class="fixed w-full top-0 z-50 bg-[#b2dfc3cf] shadow-md">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between px-4 py-4 md:px-12">
+  
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="#">
+          <img src="https://secure8.io/wp-content/uploads/2025/06/Secure8-1-1.png" alt="Secure8 Logo" class="h-10 w-auto" />
+        </a>
+      </div>
+  
+      <!-- Hamburger Icon (Mobile) -->
+      <div class="md:hidden">
+        <button id="menuToggle" class="text-3xl font-bold text-gray-800 focus:outline-none">
+          &#9776;
+        </button>
+      </div>
+  
+      <!-- Desktop Navigation Links -->
+      <div id="navLinks" class="hidden md:flex items-center gap-6">
+        <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 px-3 py-1 rounded-lg transition-all">Home</a>
+        <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 px-3 py-1 rounded-lg transition-all">About</a>
+        <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 px-3 py-1 rounded-lg transition-all">Services</a>
+        <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 px-3 py-1 rounded-lg transition-all">Academy</a>
+        <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 px-3 py-1 rounded-lg transition-all">Contact</a>
+        <a href="#" class="bg-green-600 text-white font-bold uppercase px-4 py-2 rounded-lg border border-[#449048] hover:bg-green-500 transition-all">
+          Request Quote
+        </a>
+      </div>
     </div>
-
-    <!-- Hamburger Icon -->
-    <div class="md:hidden">
-      <button id="menuToggle" class="text-3xl font-bold text-gray-800">&#9776;</button>
-    </div>
-
-    <!-- Desktop Nav -->
-    <div id="navLinks" class="hidden md:flex items-center gap-6">
-      <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 px-3 py-1 rounded-lg transition-all">Home</a>
-      <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 px-3 py-1 rounded-lg transition-all">About</a>
-      <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 px-3 py-1 rounded-lg transition-all">Services</a>
-      <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 px-3 py-1 rounded-lg transition-all">Academy</a>
-      <a href="#" class="uppercase font-bold text-slate-800 hover:bg-green-600 px-3 py-1 rounded-lg transition-all">Contact</a>
-      <a href="#" class="bg-green-600 text-white font-bold uppercase px-4 py-2 rounded-lg border border-[#449048] hover:bg-green-500 transition-all">
+  
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden flex flex-col gap-2 px-4 pb-4 bg-[#b2dfdb]">
+      <a href="#" class="block uppercase hover:bg-green-600 px-3 py-2 rounded-lg font-bold text-black">Home</a>
+      <a href="#" class="block uppercase hover:bg-green-600 px-3 py-2 rounded-lg font-bold text-black">About</a>
+      <a href="#" class="block uppercase hover:bg-green-600 px-3 py-2 rounded-lg font-bold text-black">Services</a>
+      <a href="#" class="block uppercase hover:bg-green-600 px-3 py-2 rounded-lg font-bold text-black">Academy</a>
+      <a href="#" class="block uppercase hover:bg-green-600 px-3 py-2 rounded-lg font-bold text-black">Contact</a>
+      <a href="#" class="block mt-2 bg-green-600 text-white font-bold uppercase px-4 py-2 rounded-lg border border-[#449048] hover:bg-green-500 transition-all text-center">
         Request Quote
       </a>
     </div>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-[#b2dfdb] transition-all duration-300 ease-in-out">
-    <a href="#" class="block py-2 uppercase hover:bg-green-600 px-3 rounded-lg font-bold text-black">Home</a>
-    <a href="#" class="block py-2 uppercase hover:bg-green-600 px-3 rounded-lg font-bold text-black">About</a>
-    <a href="#" class="block py-2 uppercase hover:bg-green-600 px-3 rounded-lg font-bold text-black">Services</a>
-    <a href="#" class="block py-2 uppercase hover:bg-green-600 px-3 rounded-lg font-bold text-black">Academy</a>
-    <a href="#" class="block py-2 uppercase hover:bg-green-600 px-3 rounded-lg font-bold text-black">Contact</a>
-    <a href="#" class="block mt-3 bg-green-600 text-white font-bold uppercase px-4 py-2 rounded-lg border border-[#449048] hover:bg-green-500 transition-all">
-      Request Quote
-    </a>
-  </div>
-</nav>
+  </nav>
+  
 
     <!-- ✅ Hero Section with AOS -->
 <section class="relative min-h-[100vh] flex items-center justify-center text-white bg-cover bg-center px-4 sm:px-6 pt-28 sm:pt-32"
@@ -514,13 +522,12 @@ style="background-image: url('images/hacker.png');">
     AOS.init();
 
 
-    const menuToggle = document.getElementById("menuToggle");
+    const toggle = document.getElementById("menuToggle");
   const mobileMenu = document.getElementById("mobileMenu");
 
-  menuToggle.addEventListener("click", () => {
+  toggle.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
   });
-
 
 
       document.addEventListener("DOMContentLoaded", () => {
