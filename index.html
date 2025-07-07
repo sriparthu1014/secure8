@@ -180,7 +180,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
   
         <!-- 🔒 Card 1: Security Consulting -->
-        <div class="relative group w-full overflow-hidden rounded-2xl shadow-2xl hover:shadow-green-400 transition-all duration-300 ease-in-out aspect-[3/4]" data-aos="zoom-in" data-aos-delay="100">
+        <div class="relative group w-full overflow-hidden rounded-2xl shadow-2xl hover:shadow-green-400 transition-all duration-300 ease-in-out aspect-[3/4]" data-aos="zoom-in" data-aos-delay="100" onclick="toggleCardInfo(this)">
           <img src="images/security-consulting.png" alt="Security Consulting" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-50" />
           <div class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
             <div class="text-3xl text-black mb-2"><i class="fas fa-shield-halved"></i></div>
@@ -516,6 +516,19 @@
 
     AOS.init();
 
+      //card1
+      function toggleCardInfo(card) {
+    const info = card.querySelector(".card-info");
+
+    // Toggle visibility manually for mobile (opacity class)
+    if (info.classList.contains("opacity-0")) {
+      info.classList.remove("opacity-0");
+      info.classList.add("opacity-100");
+    } else {
+      info.classList.remove("opacity-100");
+      info.classList.add("opacity-0");
+    }
+  }
 
     const toggle = document.getElementById("menuToggle");
   const mobileMenu = document.getElementById("mobileMenu");
